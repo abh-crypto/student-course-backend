@@ -16,25 +16,25 @@ Maven
 Postman (API Testing)
 IntelliJ IDEA Community Edition
 
-==>Project Structure<==
-student-course-backend/
+### 📁 Project Structure
+```text
+student-course-backend
+├── src
+│   └── main
+│       ├── java
+│       │   ├── controller
+│       │   ├── service
+│       │   ├── repo
+│       │   ├── entity
+│       │   └── dto
+│       │
+│       └── resources
+│           ├── application.properties
+│           └── sql
+│               └── schema.sql
 │
-├── src/main/java/
-│              ├── controller/
-│              ├── service/
-│              ├── repo/
-│              ├── entity/
-│              └── dto/
-│
-├── src/main/resources/sql
-│                 │     ├──schema.sql          
-│                 │
-│                 │
-│                 ├── application.properties
-│                 
-│
-├── README.md
-└── pom.xml
+├── pom.xml
+└── README.md
 
 ## Setup & Run Instructions
 1.Prerequisites
