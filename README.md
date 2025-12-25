@@ -8,13 +8,13 @@ The project demonstrates backend development, REST APIs, JPA/Hibernate, and SQL 
 Each student is linked to a course using a foreign key relationship.
 
 ## Tech Stack
-=>Java 17
-=>Spring Boot
-=>Spring Data JPA (Hibernate)
-=>MySQL
-=>Maven
-=>Postman (API Testing)
-=>IntelliJ IDEA Community Edition
+Java 17
+Spring Boot
+Spring Data JPA (Hibernate)
+MySQL
+Maven
+Postman (API Testing)
+IntelliJ IDEA Community Edition
 
 ==>Project Structure<==
 student-course-backend/
