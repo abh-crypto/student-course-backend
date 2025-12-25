@@ -1,4 +1,4 @@
-//////******Student-Course-Management-App******/////////// 
+# 📚 Student-Course-Management-App
 
 ## Project Overview
 
@@ -7,14 +7,14 @@ The project demonstrates backend development, REST APIs, JPA/Hibernate, and SQL 
 
 Each student is linked to a course using a foreign key relationship.
 
-## Tech Stack
-Java 17
-Spring Boot
-Spring Data JPA (Hibernate)
-MySQL
-Maven
-Postman (API Testing)
-IntelliJ IDEA Community Edition
+## 🛠️ Tech Stack
+- Java 17
+- Spring Boot
+- Spring Data JPA (Hibernate)
+- MySQL
+- Maven
+- Postman (API Testing)
+- IntelliJ IDEA Community Edition
 
 ### 📁 Project Structure
 ```
@@ -37,100 +37,118 @@ student-course-backend
 └── README.md
 
 ```
-## Setup & Run Instructions
-1.Prerequisites
-Make sure you have:
-->Java 17+
-->MySQL Server
-->Maven
-->IntelliJ IDEA (Community Edition)
+## 🚀 Setup & Run Instructions
 
-2.Create Database
-Open MySQL Workbench and run: CREATE DATABASE studentcoursedb;
+   ### Prerequisites
+- Java 17+
+- MySQL Server
+- Maven
+- IntelliJ IDEA (Community Edition)
 
-3.Configure Database
-Below is the database configuration used for this project:
-/DatabaseScreenshots
+### 1️⃣ Create Database
+ - Open MySQL Workbench and run:
+    ```
+     CREATE DATABASE studentcoursedb;
+     ```
+
+### 2️⃣ Configure Database
+ - Below screenshots show the database configuration used in this project:
+   ```
+   DatabaseScreenshots
         ├── db-configuration.png
         ├── course-table.png
-        ├── student-table.png
+        └── student-table.png
+    ```
 
-4.Run the Application
- Using Intellij:
-    i.Open the project
-    ii.Locate the main SpringBoot class
-    iii.Run it
- Or Using the Maven: mvn spring-boot:run
- Application will run on: http://localhost:8084
+### ➡️ Update database credentials in:
+     src/main/resources/application.properties
 
-## Database Schema
- You view the course table and student table in the :
-        i.Database Screenshots/course-table.png.
-        ii.Database Screenshots/student-table.png.
+### 3️⃣ Run the Application
+   ▶ Using IntelliJ IDEA:
+   - Open the project in IntelliJ IDEA
+   - Locate the main Spring Boot Application class
+   - Click Run
+     
+   ▶ Using Maven
+   mvn spring-boot: run
+
+## 🌐 Application URL
+   - Once started, the application will run on: http://localhost:8084
+
+## 🛢 Database Schema
+  #### You view the course table and student table in the :
+   - Database Screenshots/course-table.png.
+   - Database Screenshots/student-table.png.
 
 
-## SQL Scripts
- All SQL Scripts are included in the project under: src/main/resources/sql/
-    Includes:
-        i.Database schema creation
-        ii.Foreign key relationships
+## 🗄 SQL Scripts
+ ### All SQL Scripts are included in the project under:
+ ```
+ src/main/resources/sql/
+ ```
+#### Includes:
+   - Database schema creation
+   - Foreign key relationships
 
-## API Endpoints
-Base URL: http://localhost:8084/api/v1
+## 📌 API Endpoints
+#### Base URL: http://localhost:8084/api/v1
 
-//**1.Course APIs**//
-1️.Add Course :POST /course/save
-  Request Body:
-   {
-     "coursename": "Spring Security",
-     "coursecode": "AS235",
-     "courseduration": 4
-   }
-2️.Get All Courses : GET /course/getAllCourses
-3.Get Course By ID :GET /course/{courseId}
+#### 🎓 Course APIs
+####  ➕ Add Course : POST /course/save
+  - Request Body
+    ```json
 
-//**2.Student APIs**//
-1.Add Student with Course:POST /student/save
-  Request Body:
-   {
-     "studentname": "Vinit",
-     "studentemail": "vinit@gmail.com",
-     "course": {
-        "courseid": 5
-     }
-   }
-2.Get All Students:GET /student/getAllStudents
-3.Update Student Details:PUT /student/update
-4.Delete Student :DELETE /student/delete/{studentId}
+    {
+      "coursename": "Spring Security",
+      "coursecode": "AS235",
+      "courseduration": 4
+    }
+   
+#### 📄 Get All Courses
+#### 🔍 Get Course By ID: GET /course/{courseId}
 
-## API Testing (Postman)
-All REST APIs were tested using **Postman** to ensure correct functionality.
-### HTTP Methods Tested
-- POST
-- GET
-- PUT
-- DELETE
+#### 👨‍🎓 Student APIs
+#### ➕ Add Student with Course: POST /student/save
+  - Request Body
+      ```json     
+       {
+          "studentname": "Vinit",
+          "studentemail": "vinit@gmail.com",
+          "course": {
+              "courseid": 5
+                  }
+      }
 
-Successful API responses and database persistence were verified using **MySQL**.
+#### 📄 Get All Students: GET /student/getAllStudents
+#### ✏ Update Student Details: PUT /student/update
+#### ❌ Delete Student: DELETE /student/delete/{studentId}
 
-### Test Evidence
-Postman testing screenshots demonstrating request bodies and successful responses
-are included in the **API Tested Screenshots** folder.
+## 🧪 API Testing (Postman)
+  - All REST APIs were tested using Postman to ensure correct functionality.
 
-## Output Demonstration
-✔ Successful API execution in Postman
-✔ Data persisted in MySQL database
-✔ Foreign key relationship verified.
+#### ✅ HTTP Methods Tested
+       POST
+       GET
+       PUT
+       DELETE
 
-## SQL Scripts
-All SQL scripts are included in: src/main/resources/sql/schema.sql
+  ✔ Successful API responses &nbsp;&nbsp;
+  ✔ Data persistence verified in MySQL
 
-## Future Enhancements
- i.Pagination & sorting
- ii.Swagger API documentation
+## 📸 Test Evidence
+ - Postman testing screenshots showing request bodies and successful responses are included in the:
+   API Tested Screenshots folder.
 
-//****Author****//
- Abhishek Sargam
- Backend Developer | Java | Spring Boot | MySQL
+## 📊 Output Demonstration
+ ✔ Successful API execution in Postman
+ ✔ Data persisted in MySQL database
+ ✔ Foreign key relationship verified.
 
+## 🚀 Future Enhancements
+  - Pagination & Sorting
+  - Swagger API Documentation
+
+## 👤 Author
+Abhishek Sargam
+Backend Developer | Java | Spring Boot | MySQL
         
