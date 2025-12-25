@@ -36,6 +36,7 @@ student-course-backend
 ├── pom.xml
 └── README.md
 
+```text
 ## Setup & Run Instructions
 1.Prerequisites
 Make sure you have:
