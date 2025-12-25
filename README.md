@@ -1,4 +1,4 @@
-# 📚 Student-Course-Management-App
+# 📚 Student-Course-Backend
 
 ## Project Overview
 
