@@ -17,7 +17,7 @@ Postman (API Testing)
 IntelliJ IDEA Community Edition
 
 ### 📁 Project Structure
-```text
+```
 student-course-backend
 ├── src
 │   └── main
@@ -36,7 +36,7 @@ student-course-backend
 ├── pom.xml
 └── README.md
 
-```text
+```
 ## Setup & Run Instructions
 1.Prerequisites
 Make sure you have:
